@@ -32,7 +32,7 @@ handleSubmit(event){
     // debugger;
     console.log('keyword submitted ' + this.state.value);
     event.preventDefault();
-    axios.get('http://localhost:3000/get')
+    axios.get(`http://localhost:3000/get?value=${this.state.value}`)
     .then((res) => {/*console.log(res)*/
     this.setState({results: res});
     });

@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const express = require('express');
 const axios = require('axios');
+const mongoose = require('mongoose');
 
 const app = express();
 const config = require('./webpack.config.js');
@@ -33,7 +34,7 @@ app.use('/', (req, res, next) => {
 })
 
 //attempt first http request to reddit here
-app.get('/get', soloController.get, (req, res, next) => {
+app.get('/get?', soloController.get, (req, res, next) => {
     console.log('made it back to server');
 res.status(200).json(res.locals.data);
 })

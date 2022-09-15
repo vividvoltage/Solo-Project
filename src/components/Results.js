@@ -8,7 +8,7 @@ class Results extends Component {
     }
 
 componentDidMount(){
-    console.log(this.props.results[0].data.title, this.props.results[0].data.url);
+    // console.log(this.props.results[0].data.title, this.props.results[0].data.url);
 }
 
 render() {
