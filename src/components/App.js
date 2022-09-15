@@ -5,9 +5,9 @@ import Results from './Results';
 class App extends Component {
     render() {
         return (
-            <div style={{display: "grid", gridTemplateColumns: "repeat(2, 1fr)"}}>
+            <div /*style={{display: "grid", gridTemplateColumns: "repeat(2, 1fr)"}}*/>
                 <h1>Solo Project Test</h1>
-                <Results />
+                {/* <Results /> */}
                 <Container /> 
             </div>
         )
