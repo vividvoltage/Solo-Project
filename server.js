@@ -5,6 +5,7 @@ const express = require('express');
 const axios = require('axios');
 const mongoose = require('mongoose');
 
+
 const app = express();
 const config = require('./webpack.config.js');
 const compiler = webpack(config);
@@ -15,6 +16,8 @@ const PORT = 3000;
 
 //at the moment debating if I need a controller or if I can do everything from a single server page
 const soloController = require('./controller')
+
+
 
 //dependency for webpack to compile backend
 app.use(

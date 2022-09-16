@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
